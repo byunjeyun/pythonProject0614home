@@ -6,7 +6,7 @@ from PyQt5 import uic
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
 
-form_class = uic.loadUiType("ui/weather.ui")[0]
+form_class = uic.loadUiType("D:/1byunz/pythonProject0614home/ui/weather.ui")[0]
 
 class WeatherAppWindow(QMainWindow, form_class):
     def __init__(self):
