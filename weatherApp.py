@@ -7,18 +7,19 @@ from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
 from PyQt5.QtCore import Qt
 
-form_class = uic.loadUiType("D:/1byunz/pythonProject0614home/ui/weather.ui")[0]
+form_class = uic.loadUiType("ui/weather.ui")[0]
 
 class WeatherAppWindow(QMainWindow, form_class):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
         self.setWindowTitle("오늘의 날씨")
-        self.setWindowIcon(QIcon("icons/temp.png"))
+        self.setWindowIcon(QIcon("D:/1byunz/pythonProject/weather0617/icons/temp.png"))
         self.statusBar().showMessage('WEATHER APP VER 1.0')
         self.setWindowFlags(Qt.WindowStaysOnTopHint) #윈도우에 고정
         #날씨 조회 버튼
         self.weather_btn.clicked.connect(self.crawling_weather)
+
 
     def crawling_weather(self):
         weather_area = self.input_area.text() # 유저가 입력한 지역텍스트 가져오기
@@ -86,20 +87,30 @@ class WeatherAppWindow(QMainWindow, form_class):
 
     def setWeatherImg(self, weatherInfo):
         if weatherInfo == "흐림":
-            weatherImg = QPixmap("D:/1byunz/pythonProject0614home/img/cloud.png")
+            weatherImg = QPixmap("D:/1byunz/pythonProject/weather0617/img/cloud.png")
 
         elif weatherInfo == "맑음":
-            weatherImg = QPixmap("D:/1byunz/pythonProject0614home/img/sun.png")
+            weatherImg = QPixmap("D:/1byunz/pythonProject/weather0617/img/sun.png")
         elif weatherInfo == "맑음":
-            weatherImg = QPixmap("D:/1byunz/pythonProject0614home/img/windrain.png")
+            weatherImg = QPixmap("D:/1byunz/pythonProject/weather0617/img/windrain.png")
         elif weatherInfo == "비":
-            weatherImg = QPixmap("D:/1byunz/pythonProject0614home/img/rain.png")
+            weatherImg = QPixmap("D:/1byunz/pythonProject/weather0617/img/rain.png")
         elif weatherInfo == "구름많음":
-            weatherImg = QPixmap("D:/1byunz/pythonProject0614home/img/cloud.png")
+            weatherImg = QPixmap("D:/1byunz/pythonProject/weather0617/img/cloud.png")
+        elif weatherInfo == "소낙":
+            weatherImg = QPixmap("D:/1byunz/pythonProject/weather0617/img/windrain.png")
+        elif weatherInfo == "구름조금":
+            weatherImg = QPixmap("D:/1byunz/pythonProject/weather0617/img/cloud.png")
+        elif weatherInfo == "구름":
+            weatherImg = QPixmap("D:/1byunz/pythonProject/weather0617/img/cloud.png")
+
+
         else:
             self.weather_label.setText(weatherInfo)
-        self.weather_label.setPixmap(QPixmap(weatherImg))
-
+        try:
+            self.weather_label.setPixmap(QPixmap(weatherImg))
+        except:
+            self.weather_label.setText(weatherInfo)
 
     def reflashTimer(self):
         self.crawling_weather()
