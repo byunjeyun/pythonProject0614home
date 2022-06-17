@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>358</width>
-    <height>549</height>
+    <width>343</width>
+    <height>497</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -46,7 +46,7 @@
      <rect>
       <x>80</x>
       <y>45</y>
-      <width>181</width>
+      <width>161</width>
       <height>31</height>
      </rect>
     </property>
@@ -57,7 +57,7 @@
    <widget class="QPushButton" name="weather_btn">
     <property name="geometry">
      <rect>
-      <x>270</x>
+      <x>250</x>
       <y>45</y>
       <width>75</width>
       <height>31</height>
@@ -83,7 +83,7 @@
     <property name="geometry">
      <rect>
       <x>50</x>
-      <y>100</y>
+      <y>90</y>
       <width>251</width>
       <height>41</height>
      </rect>
@@ -97,7 +97,7 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">color:rgb(70, 218, 92)</string>
+     <string notr="true">color:rgb(12, 126, 48)</string>
     </property>
     <property name="text">
      <string>지역</string>
@@ -111,8 +111,8 @@
      <rect>
       <x>20</x>
       <y>150</y>
-      <width>151</width>
-      <height>131</height>
+      <width>121</width>
+      <height>121</height>
      </rect>
     </property>
     <property name="text">
@@ -125,16 +125,16 @@
    <widget class="QLabel" name="temp_label">
     <property name="geometry">
      <rect>
-      <x>190</x>
+      <x>160</x>
       <y>150</y>
-      <width>151</width>
-      <height>131</height>
+      <width>161</width>
+      <height>121</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>휴먼모음T</family>
-      <pointsize>36</pointsize>
+      <pointsize>28</pointsize>
      </font>
     </property>
     <property name="text">
@@ -148,8 +148,8 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>380</y>
-      <width>91</width>
+      <y>340</y>
+      <width>101</width>
       <height>31</height>
      </rect>
     </property>
@@ -173,9 +173,9 @@
    <widget class="QLabel" name="label_6">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>380</y>
-      <width>91</width>
+      <x>120</x>
+      <y>340</y>
+      <width>101</width>
       <height>31</height>
      </rect>
     </property>
@@ -199,9 +199,9 @@
    <widget class="QLabel" name="label_7">
     <property name="geometry">
      <rect>
-      <x>250</x>
-      <y>380</y>
-      <width>91</width>
+      <x>230</x>
+      <y>340</y>
+      <width>101</width>
       <height>31</height>
      </rect>
     </property>
@@ -225,11 +225,19 @@
    <widget class="QLabel" name="dust2_label">
     <property name="geometry">
      <rect>
-      <x>250</x>
-      <y>420</y>
-      <width>91</width>
+      <x>230</x>
+      <y>380</y>
+      <width>101</width>
       <height>91</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
     </property>
     <property name="styleSheet">
      <string notr="true">border:solid; border-width: 1px; border-color:rgb(185, 159, 157)</string>
@@ -245,13 +253,21 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>420</y>
-      <width>91</width>
+      <y>380</y>
+      <width>101</width>
       <height>91</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">border:solid; border-width: 1px; border-color:rgb(201, 223, 255)</string>
+     <string notr="true">border:solid; border-width: 1px; border-color:rgb(201, 223, 255);color:rgb(255, 147, 133)</string>
     </property>
     <property name="text">
      <string/>
@@ -263,11 +279,19 @@
    <widget class="QLabel" name="dust1_label">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>420</y>
-      <width>91</width>
+      <x>120</x>
+      <y>380</y>
+      <width>101</width>
       <height>91</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
     </property>
     <property name="styleSheet">
      <string notr="true">border:solid; border-width: 1px; border-color:rgb(255, 230, 128)</string>
@@ -283,9 +307,9 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>310</y>
+      <y>300</y>
       <width>311</width>
-      <height>41</height>
+      <height>21</height>
      </rect>
     </property>
     <property name="font">
